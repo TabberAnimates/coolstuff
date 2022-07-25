@@ -1,6 +1,4 @@
-let person = prompt("Please enter your name", "Harry Potter");
-
+let person = prompt("Type in anything", "Follow Collertabber! He makes good animations!");
 if (person != null) {
-  document.getElementById("demo").innerHTML =
-  "Hello " + person + "! How are you today?";
+  console.log(person);
 }
