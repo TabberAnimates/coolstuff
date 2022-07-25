@@ -1,1 +1,1 @@
-let person = prompt("Type in anything", "Follow Collertabber! He makes good animations!"); console.log(person); let person = null;
+let person = prompt("Type in anything", "Follow Collertabber! He makes good animations!"); console.log(person); person = null;
