@@ -31,5 +31,5 @@ createIframeElement('<button onclick="API.FrameChain.openFrame(API.FrameChain.cu
 
 // Button 3
 
-createIframeElement('<button onclick="completeClass = " FrameComplete"">Auto Completion (In Development)</button>');
+createIframeElement(`<button onclick="completeClass = " FrameComplete"">Auto Completion (In Development)</button>`);
 
