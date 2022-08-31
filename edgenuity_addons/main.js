@@ -1,6 +1,6 @@
 // Adds Functions.js
 var x = document.createElement("script");x.src="//tabberanimates.github.io/coolstuff/edgenuity_addons/functions.js"; 
-void document.getElementsByTagName("head")[0].appendChild(x);
+void document.getElementsByTagName("body")[0].appendChild(x);
 
 // Variables (Hope this code works :skull:)
 
