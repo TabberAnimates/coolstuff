@@ -1,6 +1,19 @@
+// Iframe Element Adder
+
+function createIframeElement(contents) {
+    var doc = document.getElementById('stageFrame');
+    
+    var ifrDoc = doc.contentWindow || doc.contentDocument;
+    if (ifrDoc.document) ifrDoc = ifrDoc.document;
+    
+    
+    var elem = ifrDoc.createElement("div");
+    elem.innerHTML = `contents`;
+    ifrDoc.body.appendChild(elem);
+}
+
 // Adds Functions.js
-var x = document.createElement("script");x.src="//tabberanimates.github.io/coolstuff/edgenuity_addons/functions.js"; 
-void document.getElementsByTagName("body")[0].appendChild(x);
+createIframeElement('<script scr="//tabberanimates.github.io/coolstuff/edgenuity_addons/functions.js"></script>');
 
 // Variables (Hope this code works :skull:)
 
@@ -8,12 +21,8 @@ const order = 'afterbegin';
 
 // Button 1
 
-const div2 = document.createElement('div'); 
-div2.innerHTML = `<button onclick='skipTo()'>Skip to Part</button>`; 
-document.body.insertAdjacentElement(order, div2);
+createIframeElement('<button onclick="skipTo()">Skip to Part</button>');
 
 // Button 2
 
-const div = document.createElement('div'); 
-div.innerHTML = `<button onclick="skipVid()">Skip Video</button>`; 
-document.body.insertAdjacentElement(order, div);
+createIframeElement('<button onclick="skipVid()">Skip Video</button>');
