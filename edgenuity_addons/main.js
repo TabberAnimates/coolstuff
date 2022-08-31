@@ -8,7 +8,7 @@ function createIframeElement(contents) {
     
     
     var elem = ifrDoc.createElement("div");
-    elem.innerHTML = `contents`;
+    elem.innerHTML = contents;
     ifrDoc.body.appendChild(elem);
 }
 
