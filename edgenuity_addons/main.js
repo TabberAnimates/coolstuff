@@ -1,7 +1,6 @@
 // Iframe Element Adder
 
 function createIframeElement(contents) {
-    console.log(contents);
     var value = contents;
     var doc = document.getElementById('stageFrame');
     
