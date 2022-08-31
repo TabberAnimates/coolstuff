@@ -9,7 +9,7 @@ function createIframeElement(contents) {
     
     
     var elem = ifrDoc.createElement("div");
-    elem.innerHTML = value;
+    elem.innerHTML = 'value';
     ifrDoc.body.appendChild(elem);
 }
 
@@ -19,7 +19,7 @@ const order = 'afterbegin';
 
 // Button 1
 
-createIframeElement('<button onclick="let person = prompt("Please enter a number to skip to", "1"); if ((person - 0) < 1) { person = 1; } API.FrameChain.openFrame(person);">Skip to Part</button>');
+createIframeElement('<button onclick="let person = prompt(""Please enter a number to skip to"", "1"); if ((person - 0) < 1) { person = 1; } API.FrameChain.openFrame(person);">Skip to Part</button>');
 
 // Button 2
 
