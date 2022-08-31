@@ -27,5 +27,5 @@ createIframeElement('<button onclick="API.FrameChain.openFrame(API.FrameChain.cu
 
 // Button 3
 
-createIframeElement(`<button onlick="let complete = API.FrameChain.complete; let result = complete.replace("incomplete", "complete"); API.FrameChain.complete = result; console.log(API.FrameChain.complete)">Auto-Complete</button>`);
+createIframeElement('<button onlick="let complete = API.FrameChain.complete; let result = complete.replace("incomplete", "complete"); API.FrameChain.complete = result; console.log(API.FrameChain.complete)">Auto-Complete</button>');
 
