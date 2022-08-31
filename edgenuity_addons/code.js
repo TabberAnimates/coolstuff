@@ -19,7 +19,7 @@ const order = 'afterbegin';
 
 // Auto-Complete (WIP)
 
-createIframeElement('<script>let complete = API.FrameChain.complete; let result = complete.replace("incomplete", "complete"); API.FrameChain.complete = result; console.log(API.FrameChain.complete);</script>');
+createIframeElement('<script>API.FrameChain.isComplete = true; API.FrameChain.complete();</script>');
 
 // Button 1
 
