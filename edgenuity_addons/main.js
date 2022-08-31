@@ -1,6 +1,7 @@
 // Iframe Element Adder
 
 function createIframeElement(contents) {
+    var value = contents;
     var doc = document.getElementById('stageFrame');
     
     var ifrDoc = doc.contentWindow || doc.contentDocument;
@@ -8,7 +9,7 @@ function createIframeElement(contents) {
     
     
     var elem = ifrDoc.createElement("div");
-    elem.innerHTML = 'contents';
+    elem.innerHTML = value;
     ifrDoc.body.appendChild(elem);
 }
 
