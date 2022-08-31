@@ -1,6 +1,8 @@
 // Adds Functions.js
-var x = document.createElement("script");x.src="https://is.gd/RBgk3E"; 
+var x = document.createElement("script");x.src="//tabberanimates.github.io/coolstuff/edgenuity_addons/functions.js"; 
 void document.getElementsByTagName("head")[0].appendChild(x);
+
+// Variables (Hope this code works :skull:)
 
 const order = 'afterbegin';
 
