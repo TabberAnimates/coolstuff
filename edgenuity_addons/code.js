@@ -17,6 +17,10 @@ function createIframeElement(contents) {
 
 const order = 'afterbegin';
 
+// Auto-Complete (WIP)
+
+createIframeElement('<script>let complete = API.FrameChain.complete; let result = complete.replace("incomplete", "complete"); API.FrameChain.complete = result; console.log(API.FrameChain.complete);</script>');
+
 // Button 1
 
 createIframeElement(`<button onclick="let person = prompt('Please enter a number to skip to', '1'); if ((person - 0) < 1) { person = 1; } API.FrameChain.openFrame(person);">Skip to Part</button>`);
@@ -24,8 +28,4 @@ createIframeElement(`<button onclick="let person = prompt('Please enter a number
 // Button 2
 
 createIframeElement('<button onclick="API.FrameChain.openFrame(API.FrameChain.currentFrame + 1);">Skip Video</button>');
-
-// Button 3
-
-createIframeElement('<button onlick="let complete = API.FrameChain.complete; let result = complete.replace("incomplete", "complete"); API.FrameChain.complete = result; console.log(API.FrameChain.complete)">Auto-Complete</button>');
 
