@@ -9,7 +9,7 @@ function createIframeElement(contents) {
     
     
     var elem = ifrDoc.createElement("div");
-    elem.innerHTML = 'value';
+    elem.innerHTML = value;
     ifrDoc.body.appendChild(elem);
 }
 
