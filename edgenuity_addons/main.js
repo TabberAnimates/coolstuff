@@ -27,9 +27,9 @@ createIframeElement(`<button onclick="let person = prompt('Please enter a number
 
 // Button 2
 
-createIframeElement('<button onclick="API.FrameChain.openFrame(API.FrameChain.currentFrame + 1);">Skip Video</button>');
+createIframeElement('<button onclick="let array = API.FrameChain.framesStatus; let result = array.splice(array.indexOf('incomplete'), 1, 'complete'); API.FrameChain.framesStatus = array; API.FrameChain.openFrame(API.FrameChain.currentFrame + 1);">Skip Video</button>');
 
 // Button 3
 
-createIframeElement(`<button onclick="completeClass = ' FrameComplete';">Auto Completion (In Development)</button>`);
+createIframeElement(`<button onclick="let array = API.FrameChain.framesStatus; for (var i = 0; i < array.length; i++) { if (array[i] == 'incomplete') { array[i] = 'complete'; } } API.FrameChain.franeStatus = array;">Auto Completion (In Development)</button>`);
 
