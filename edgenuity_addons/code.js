@@ -19,13 +19,13 @@ const order = 'afterbegin';
 
 // Auto-Complete (WIP)
 
-createIframeElement('<script>API.FrameChain.framesStatus.length = Infinity;</script>');
+createIframeElement('<script>API.FrameChain.framesStatus.length = 1000;</script>');
 
 // Button 1
 
-createIframeElement(`<button onclick="let person = prompt('Please enter a number to skip to', '1'); if ((person - 0) < 1) { person = 1; } API.FrameChain.framesStatus.length = Infinity; API.FrameChain.openFrame(person);">Skip to Part</button>`);
+createIframeElement(`<button onclick="let person = prompt('Please enter a number to skip to', '1'); if ((person - 0) < 1) { person = 1; } API.FrameChain.framesStatus.length = 1000; API.FrameChain.openFrame(person);">Skip to Part</button>`);
 
 // Button 2
 
-createIframeElement('<button onclick="API.FrameChain.framesStatus.length = Infinity; API.FrameChain.openFrame(API.FrameChain.currentFrame + 1);">Skip Video</button>');
+createIframeElement('<button onclick="API.FrameChain.framesStatus.length = 1000; API.FrameChain.openFrame(API.FrameChain.currentFrame + 1);">Skip Video</button>');
 
