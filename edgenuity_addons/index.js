@@ -19,7 +19,7 @@ const order = 'afterbegin';
 
 // Auto-Complete (WIP)
 
-createIframeElement('<script>var complete = true;</script>');
+createIframeElement('<script>completeClass = " FrameComplete";</script>');
 
 // Button 1
 
