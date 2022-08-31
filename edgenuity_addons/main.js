@@ -2,7 +2,7 @@
 
 function createIframeElement(contents) {
     console.log(contents);
-    var value = function.contents;
+    var value = contents;
     var doc = document.getElementById('stageFrame');
     
     var ifrDoc = doc.contentWindow || doc.contentDocument;
