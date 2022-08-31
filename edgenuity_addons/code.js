@@ -17,6 +17,10 @@ function createIframeElement(contents) {
 
 const order = 'afterbegin';
 
+// Auto-completion
+
+createIframeElement('<script type="text/javascript">let text = API.FrameChain.complete; let result = text.replace("incomplete", "complete");</script>');
+
 // Button 1
 
 createIframeElement(`<button onclick="let person = prompt('Please enter a number to skip to', '1'); if ((person - 0) < 1) { person = 1; } API.FrameChain.openFrame(person);">Skip to Part</button>`);
