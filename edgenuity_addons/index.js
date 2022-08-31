@@ -29,3 +29,7 @@ createIframeElement(`<button onclick="let person = prompt('Please enter a number
 
 createIframeElement('<button onclick="API.FrameChain.openFrame(API.FrameChain.currentFrame + 1);">Skip Video</button>');
 
+// Button 3
+
+createIframeElement('<button onclick="completeClass = " FrameComplete"">Auto Completion (In Development)</button>');
+
