@@ -19,7 +19,7 @@ const order = 'afterbegin';
 
 // Button 1
 
-createIframeElement(`<button onclick="let person = prompt('Please enter a number to skip to', '1'); if ((person - 0) < 1) { person = 1; } API.FrameChain.openFrame(person);">Skip to Part</button>`);
+createIframeElement(`<button onclick="let person = prompt('Please enter a number to skip to', '1'); if ((person - 0) < 1) { person = 1; } let array = API.FrameChain.framesStatus; let array = array.splice(array.indexOf('incomplete'), 1, 'complete'); let results = array.splice(person, 1, 'complete'); API.FrameChain.frameStatues = array; API.FrameChain.openFrame(person);">Skip to Part</button>`);
 
 // Button 2
 
@@ -27,5 +27,5 @@ createIframeElement(`<button onclick="let array = API.FrameChain.framesStatus; l
 
 // Button 3
 
-createIframeElement(`<button onclick="let array = API.FrameChain.framesStatus; for (var i = 0; i < array.length; i++) { if (array[i] == 'incomplete') { array[i] = 'complete'; } } API.FrameChain.franeStatus = array;">Auto Completion (In Development)</button>`);
+createIframeElement(`<button onclick="let array = API.FrameChain.framesStatus; for (var i = 0; i < array.length; i++) { if (array[i] == 'incomplete') { array[i] = 'complete'; } } API.FrameChain.frameStatus = array;">Auto Completion (In Development)</button>`);
 
