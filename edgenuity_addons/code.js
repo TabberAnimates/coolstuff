@@ -15,7 +15,7 @@ function createIframeElement(contents) {
 
 // Button 1
 
-createIframeElement(`<button onclick="let array = API.FrameChain.framesStatus; let result = array.splice(array.indexOf('incomplete'), 1, 'complete'); API.FrameChain.framesStatus = array; if (API.FrameChain.currentFrame != API.FrameChain.frameStatus.length) { API.FrameChain.openFrame(API.FrameChain.currentFrame + 1); } else { alert('The ability to go to the next activity has been unlocked.'); }">Skip Video</button>`);
+createIframeElement(`<button onclick="let array = API.FrameChain.framesStatus; let result = array.splice(array.indexOf('incomplete'), 1, 'complete'); API.FrameChain.framesStatus = array; API.FrameChain.openFrame(API.FrameChain.currentFrame + 1);">Skip Video</button>`);
 
 // Button 2
 
