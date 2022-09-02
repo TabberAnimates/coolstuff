@@ -19,7 +19,7 @@ const order = 'afterbegin';
 
 // Button 1
 
-createIframeElement(`<button onclick="let person = prompt('Please enter a number to skip to', '1'); if ((person - 0) < 1) { person = 1; } let array = API.FrameChain.framesStatus; let array = array.splice(array.indexOf('incomplete'), 1, 'complete'); let results = array.splice(person, 1, 'complete'); API.FrameChain.frameStatues = array; API.FrameChain.openFrame(person);">Skip to Part</button>`);
+createIframeElement(`<button onclick="let person = prompt('Please enter a number to skip to', '1'); if ((person - 0) < 1) { person = 1; } let array = API.FrameChain.framesStatus; let result = array.splice(array.indexOf('incomplete'), 1, 'complete'); let results = array.splice(person, 1, 'complete'); API.FrameChain.frameStatues = array; API.FrameChain.openFrame(person);">Skip to Part</button>`);
 
 // Button 2
 
